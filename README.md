@@ -332,7 +332,8 @@ Planned enhancements include:
 
 ## Author
 
-**Kareem Rabea**
+**Karim Rabie**
+Cloud Engineer | AWS | Linux | Networking | Terraform
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kareem--rabiee-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/karim-rabiee)
-[![GitHub](https://img.shields.io/badge/GitHub-kareemrabiee-181717?style=flat-square&logo=github)](https://github.com/karimrabiee)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-karim--rabiee-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/karim-rabiee)
+[![GitHub](https://img.shields.io/badge/GitHub-karimrabiee-181717?style=flat-square&logo=github)](https://github.com/karimrabiee)
