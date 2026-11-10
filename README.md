@@ -12,7 +12,14 @@
 </div>
 
 ---
+## Business Problem
 
+Organizations need a secure, scalable way to accept, process, store, and
+globally distribute image content — without exposing storage infrastructure
+publicly, without provisioning idle compute for unpredictable traffic, and
+without sacrificing auditability or disaster recovery posture along the way.
+
+---
 ## Features
 
 ✅ **Serverless Architecture**  
