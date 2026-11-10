@@ -39,7 +39,7 @@ When `enable_global_tables = true`, a replica of the metadata table is provision
 - **Automatic conflict resolution** using DynamoDB's native last-writer-wins semantics — acceptable for this workload's access pattern (each metadata record is written once by the function that processed the corresponding image, with no concurrent multi-region writers to the same key in normal operation).
 - **No application-layer replication logic** — this is a fully managed AWS capability layered onto an existing table via a single resource declaration.
 
-![DynamoDB Replica Status](../screenshots/02-disaster-recovery/dynamodb-replica-status.png)
+![DynamoDB Replica Status](../screenshots/03-disaster-recovery/dynamodb-replica-status.png)
 
 ---
 
