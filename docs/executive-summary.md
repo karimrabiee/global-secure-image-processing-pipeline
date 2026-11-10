@@ -28,8 +28,8 @@ architecture to survive a regional outage.
 | **Security** | Zero public storage exposure, Customer Managed KMS encryption, least-privilege IAM on every role, edge-layer WAF protection |
 | **Availability & Reliability** | SQS + Dead Letter Queue isolate failures; CloudWatch Alarms + SNS give real-time operational visibility |
 | **Disaster Recovery** | Documented, flag-gated multi-region path — S3 CRR, DynamoDB Global Tables, CloudFront Origin Group failover |
-| **Cost Efficiency** | ~$1/month always-on baseline; every cost-generating capability beyond that is explicit and reversible |
-| **Operational Excellence** | Every architectural decision documented as an ADR; every IAM grant explained conceptually; every test result recorded |
+| **Cost Efficiency** | Keep the image processing pipeline running at a low cost (around $1/month). Enable additional AWS services only when the project needs them, and remove them after testing to avoid unnecessary charges |
+| **Operational Excellence** | Document why each AWS service was chosen, why Lambda and other services need specific IAM permissions, and record the results of security and image-processing tests |
 
 ## Who this is for
 
