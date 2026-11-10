@@ -10,15 +10,6 @@
 			"Resource": "arn:aws:s3:::kareem-img-proc-upload-${AWS_ACCOUNT_ID}-us-east-1-an/*"
 		},
 		{
-			"Sid": "KMSUsage",
-			"Effect": "Allow",
-			"Action": [
-				"kms:Decrypt",
-				"kms:GenerateDataKey"
-			],
-			"Resource": "arn:aws:kms:us-east-1:${AWS_ACCOUNT_ID}:key/mrk-51a95f6d174540158f3e0355608624f9"
-		},
-		{
 			"Sid": "Logs",
 			"Effect": "Allow",
 			"Action": [
