@@ -4,7 +4,7 @@
 
 [![AWS Well-Architected](https://img.shields.io/badge/AWS-Well--Architected-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/architecture/well-architected/)
 [![Security](https://img.shields.io/badge/Security-Least--Privilege%20%26%20Encrypted-critical?style=for-the-badge)](./docs/threat-model.md)
-[![DR](https://img.shields.io/badge/DR-Multi--Region-blue?style=for-the-badge)](./docs/disaster-recovery.md)
+[![DR](https://img.shields.io/badge/DR-Feature--Flagged-blue?style=for-the-badge)](./docs/disaster-recovery.md)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](./LICENSE)
 
 **A serverless image processing platform designed around the AWS Well-Architected Framework — least-privilege IAM, encrypted data paths, edge-level protection, and multi-region disaster recovery, with every design decision documented and traceable.**
@@ -69,6 +69,8 @@ without sacrificing auditability or disaster recovery posture along the way.
 ---
 
 ## Project Status
+
+For an evidence-based buyer summary, see [Buyer Evidence and Scope](./docs/BUYER-EVIDENCE-AND-SCOPE.md). It separates implemented components and recorded tests from design-only capabilities and operational limitations.
 
 | Area                  | Status     |
 |-----------------------|------------|
@@ -206,7 +208,7 @@ The platform uses CloudWatch, SNS, Security Hub, GuardDuty, and CloudTrail to pr
 
 ## Disaster Recovery
 
-Feature-flagged multi-region strategy including S3 CRR, DynamoDB Global Tables, and CloudFront Origin Group failover.
+Feature-flagged data-plane DR options include S3 CRR, DynamoDB Global Tables, and CloudFront Origin Group failover. Compute remains single-region in steady state; a regional ingestion outage requires manual redeployment of API Gateway and Lambda in the secondary region. This is not automatic full-stack regional failover.
 
 ![DR](./screenshots/03-disaster-recovery/s3-cross-region-replication.png)
 
